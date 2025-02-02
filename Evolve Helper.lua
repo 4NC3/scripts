@@ -196,8 +196,8 @@ local currentServerIP = ""
 ----[AUTOUPDATE]
 local dlstatus = require("moonloader").download_status
 	update_state = false
-	local script_vers = 6
-	local script_vers_text = "1.4.6"
+	local script_vers = 7
+	local script_vers_text = "1.4.7"
 
 	local update_url = "https://raw.githubusercontent.com/4NC3/scripts/refs/heads/main/update.ini"
 	local update_path = getWorkingDirectory() .. "update.ini"
@@ -963,7 +963,6 @@ imgui.Spacing()
 			imgui.SetCursorPosX(10)
 			imgui.EndChild()
 -- [ VERSION 1.4.2]
-			imgui.Spacing()
 			imgui.BeginChild("##changelog1.4.2", imgui.ImVec2(380, 93))
 			imgui.Spacing()
 			imgui.SetCursorPosX(10)
@@ -975,7 +974,6 @@ imgui.Spacing()
 			imgui.SetCursorPosX(10)
 			imgui.EndChild()
 -- [ VERSION 1.4.1]
-			imgui.Spacing()
 			imgui.BeginChild("##changelog1.4.1", imgui.ImVec2(380, 135))
 			imgui.Spacing()
 			imgui.SetCursorPosX(10)
@@ -987,7 +985,6 @@ imgui.Spacing()
 			imgui.SetCursorPosX(10)
 			imgui.EndChild()
 -- [ VERSION 1.4.0]
-			imgui.Spacing()
 			imgui.BeginChild("##changelog1.4.0", imgui.ImVec2(380, 80))
 			imgui.Spacing()
 			imgui.SetCursorPosX(10)
@@ -1074,7 +1071,7 @@ imgui.Spacing()
 			imgui.Text("EVOLVE HELPER")
 			imgui.PopFont()
 			imgui.SameLine()
-			imgui.TextDisabled("1.4.6")
+			imgui.TextDisabled("1.4.7")
 			imgui.SameLine()
 			imgui.SetCursorPosX(400)
 			imgui.Text(faicons("ghost"))
