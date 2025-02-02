@@ -196,8 +196,8 @@ local currentServerIP = ""
 ----[AUTOUPDATE]
 local dlstatus = require("moonloader").download_status
 	update_state = false
-	local script_vers = 4
-	local script_vers_text = "4.4"
+	local script_vers = 5
+	local script_vers_text = "4.5"
 
 	local update_url = "https://raw.githubusercontent.com/4NC3/scripts/refs/heads/main/update.ini"
 	local update_path = getWorkingDirectory() .. "update.ini"
@@ -1210,11 +1210,12 @@ function main()
 		end
 	end)
 
+	wait(4000)
 	downloadUrlToFile(update_url, update_path, function(id, status)
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
 			updateIni = inicfg.load(nil, update_path)
 			if tonumber(updateIni.INFO.vers) > script_vers then
-				sampAddChatMessage("{E1B0BA}[Evolve Х Helper] {ebebeb}»меетс€ {E1B0BA}обновлени€, {ebebeb}начинаю скачивать...", -1)
+				sampAddChatMessage("{E1B0BA}[Evolve Х Helper] {ebebeb}»меетс€ {E1B0BA}обновлени€", -1)
 				update_state = true
 			end
 			os.remove(update_path)
