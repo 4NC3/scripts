@@ -197,7 +197,7 @@ local currentServerIP = ""
 local dlstatus = require("moonloader").download_status
 	update_state = false
 	local script_vers = 1
-	local script_vers_text = "1"
+	local script_vers_text = "4.2"
 
 	local update_url = "https://raw.githubusercontent.com/4NC3/scripts/refs/heads/main/update.ini"
 	local update_path = getWorkingDirectory() .. "update.ini"
@@ -950,7 +950,7 @@ imgui.Spacing()
 		end),
 
 		page_t(u8"Change Log", faicons("pen"), function()
--- [ VERSION 1.4.1]
+-- [ VERSION 1.4.2]
 			imgui.Spacing()
 			imgui.BeginChild("##changelog1.4.2", imgui.ImVec2(380, 93))
 			imgui.Spacing()
@@ -959,7 +959,7 @@ imgui.Spacing()
 			imgui.TextDisabled("1.4.2")
 			imgui.PopFont()
 			imgui.SetCursorPosX(10)
-			imgui.Text(u8"Добавлено:\n- Флудер /capture с указанной задержкой [FUNCS]\n- Открытие меню нажатием клавиши END\n- Что-то ещё 2")
+			imgui.Text(u8"Добавлено:\n- Флудер /capture с указанной задержкой [FUNCS]\n- Открытие меню нажатием клавиши END\n- Что-то ещё 33")
 			imgui.SetCursorPosX(10)
 			imgui.EndChild()
 -- [ VERSION 1.4.1]
