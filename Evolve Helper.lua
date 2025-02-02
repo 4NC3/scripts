@@ -196,8 +196,8 @@ local currentServerIP = ""
 ----[AUTOUPDATE]
 local dlstatus = require("moonloader").download_status
 	update_state = false
-	local script_vers = 8
-	local script_vers_text = "1.4.8"
+	local script_vers = 7
+	local script_vers_text = "1.4.7"
 
 	local update_url = "https://raw.githubusercontent.com/4NC3/scripts/refs/heads/main/update.ini"
 	local update_path = getWorkingDirectory() .. "update.ini"
