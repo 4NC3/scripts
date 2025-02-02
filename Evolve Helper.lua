@@ -202,7 +202,7 @@ local dlstatus = require("moonloader").download_status
 	local update_url = "https://raw.githubusercontent.com/4NC3/scripts/refs/heads/main/update.ini"
 	local update_path = getWorkingDirectory() .. "update.ini"
 
-	local script_url = ""
+	local script_url = "https://github.com/4NC3/scripts/raw/refs/heads/main/Evolve%20Helper.lua"
 	local script_path = thisScript().path
 ----[AUTOUPDATE]
 
